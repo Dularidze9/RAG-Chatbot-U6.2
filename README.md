@@ -6,33 +6,33 @@ The system is powered by LangGraph for flow control and LangChain for knowledge 
 
 # Highlights
 
-## Smart Information Lookup – Retrieves context using hybrid search (semantic + keyword)
+ Smart Information Lookup – Retrieves context using hybrid search (semantic + keyword)
 
-## Relevance Filtering – Evaluates retrieved data before generating a response
+ Relevance Filtering – Evaluates retrieved data before generating a response
 
-## Adaptive Workflow – Orchestrated through LangGraph for structured decision-making
+ Adaptive Workflow – Orchestrated through LangGraph for structured decision-making
 
-## Fallback Awareness – Responds intelligently when context is missing
+ Fallback Awareness – Responds intelligently when context is missing
 
-## Simple Chat UI – Interact instantly through a Gradio interface
+ Simple Chat UI – Interact instantly through a Gradio interface
 
-##  System Breakdown
+# System Breakdown
 
-## Dataset Loader – Imports structured text (e.g., chapters or notes) for indexing
+ Dataset Loader – Imports structured text (e.g., chapters or notes) for indexing
 
-## Vector Indexing – Embeds text via transformer-based encoders and stores in a FAISS database
+ Vector Indexing – Embeds text via transformer-based encoders and stores in a FAISS database
 
-## Retriever – Combines BM25 with semantic similarity search for better coverage
+ Retriever – Combines BM25 with semantic similarity search for better coverage
 
-## Decision Layer – Routes each query through search, web lookup, or fallback modes
+ Decision Layer – Routes each query through search, web lookup, or fallback modes
 
-## Relevance Evaluation – Ensures that only meaningful context is passed to the generator
+ Relevance Evaluation – Ensures that only meaningful context is passed to the generator
 
-## Answer Builder – Produces context-grounded responses using an LLM
+ Answer Builder – Produces context-grounded responses using an LLM
 
-## LangGraph Engine – Maintains a multi-step reasoning graph to manage flow
+ LangGraph Engine – Maintains a multi-step reasoning graph to manage flow
 
- Setup Instructions
+# Setup Instructions
 
 Install dependencies:
 
@@ -45,14 +45,14 @@ export TOGETHER_API_KEY="your_key_here"
 export TAVILY_API_KEY="your_key_here"
 
 
-Run the notebook or script to initialize the workflow and launch the interface.
+# Run the notebook or script to initialize the workflow and launch the interface.
 
  Interaction
 
 Start the Gradio app and enter your question.
 The model retrieves supporting information, checks relevance, and generates an answer grounded in the material.
 
- Disclaimer
+ # Disclaimer
 
 This implementation serves learning and research purposes.
 It’s a strong foundation for experimentation but would require extra fine-tuning, scalability, and validation for deployment in production.
